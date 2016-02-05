@@ -13,3 +13,7 @@ os.system("xcodebuild install -arch 'i386' -target LightAquaBlue -configuration 
 in file setup.py
 
 and installation wil  succeed.
+
+Orignal project hosted found here:
+
+http://lightblue.sourceforge.net
