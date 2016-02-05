@@ -1,3 +1,15 @@
 How to install found on stackoverflow here:
 
 http://stackoverflow.com/questions/21695901/pybluez-installation-errors-on-mac-os
+
+replace this:
+
+os.system("xcodebuild install -arch '$(NATIVE_ARCH_ACTUAL)' -target LightAquaBlue -configuration Release DSTROOT=/ INSTALL_PATH=/Library/Frameworks DEPLOYMENT_LOCATION=YES")
+
+with this:
+
+os.system("xcodebuild install -arch 'i386' -target LightAquaBlue -configuration Release DSTROOT=/ INSTALL_PATH=/Library/Frameworks DEPLOYMENT_LOCATION=YES")
+
+in file setup.py
+
+and installation wil  succeed.
